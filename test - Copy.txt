@@ -7,3 +7,31 @@ If raiser is from QA team then only we can change the status from QA Testing >> 
 If raiser is from Other any team then we have to change the status to "Client Testing".
 
 
+
+   git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+D:\Git Project>git checkout master
+Switched to branch 'master'
+
+D:\Git Project>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\Git Project>git branch
+* master
+
+
+
+  test_my_branch
+
+D:\Git Project>git merge test_my_branch
+Updating a9da834..f08e617
+Fast-forward
+ test - Copy.txt | 4 +++-
+
